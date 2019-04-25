@@ -1,1 +1,1 @@
-# GoFDesignPatterns
+# GoF Design Pattern Examples

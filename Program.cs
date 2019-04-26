@@ -1,4 +1,5 @@
-﻿using GoFDesignPatterns.Creational_Patterns.FactoryPattern;
+﻿using GoFDesignPatterns.Creational_Patterns.AbstractFactoryPattern;
+using GoFDesignPatterns.Creational_Patterns.FactoryPattern;
 
 using System;
 
@@ -47,6 +48,20 @@ namespace GoFDesignPatterns {
 
             #endregion
 
+            #region AbstractFactoryPattern
+
+            Console.WriteLine("######## AbstractFactoryPattern ########");
+            Console.WriteLine();
+
+            var vehicleAbstractFactory = new VehicleFactory();
+            var vehicles = new Vehicles(vehicleAbstractFactory);
+            vehicles.LightToggle();
+
+            Console.WriteLine();
+            Console.WriteLine("Press a key to go to next pattern");
+            Console.ReadKey();
+
+            #endregion
         }
     }
 }
